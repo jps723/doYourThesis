@@ -1,0 +1,26 @@
+{
+"manifest_version": 2,
+    "name": "Do Your Thesis",
+    "description": "",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://www.facebook.com/*",
+                "http://www.netflix.com/*",
+                "http://www.twitter.com/*",
+                "http://www.instagram.com/*",
+                "https://www.facebook.com/*",
+                "https://www.netflix.com/*",
+                "https://www.twitter.com/*",
+                "https://twitter.com/*",
+                "https://www.instagram.com/*"
+                
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
